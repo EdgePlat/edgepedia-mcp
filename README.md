@@ -17,7 +17,7 @@ claude mcp add --transport http edgepedia https://www.edgechat.ai/mcp
 
 **Claude (web and desktop):** Settings → Connectors → Add custom connector → `https://www.edgechat.ai/mcp`
 
-**ChatGPT:** turn on Developer mode (Settings → Security and login), then Plugins → + → Server URL `https://www.edgechat.ai/mcp`, Authentication: No Auth. In a chat, type `@Edgepedia`.
+**ChatGPT** (paid plans): turn on Developer mode (Settings → Security and login), then Plugins → + → New Plugin → Server URL `https://www.edgechat.ai/mcp`, Authentication: No Auth. In a chat, type `@Edgepedia`.
 
 **Cursor** (`~/.cursor/mcp.json`)
 ```json
@@ -56,7 +56,7 @@ Both tools are annotated read-only. Try asking:
 
 ## License
 
-Articles are under the [Edgepedia Community License 1.0](https://www.edgechat.ai/edgepedia/license): free with credit, commercial use included, and AI training is open to everyone. Show each article's `credit` line, with its link, wherever you show its text.
+Articles are under the [Edgepedia Community License 1.0](https://www.edgechat.ai/edgepedia/license): free with credit, commercial use included, and AI training is open to everyone. For other uses, organizations over USD 100 million in revenue or 100 million monthly users license separately. Show each article's `credit` line, with its link, wherever you show its text.
 
 This repository's own files (documentation, configuration, and examples) are under the [MIT License](LICENSE).
 
