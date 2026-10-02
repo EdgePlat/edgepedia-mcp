@@ -1,0 +1,25 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "ai.edgechat/edgepedia",
+  "title": "Edgepedia",
+  "description": "Search and read Edgepedia, a free and growing encyclopedia with citations. No key.",
+  "version": "1.0.1",
+  "websiteUrl": "https://www.edgechat.ai/developers",
+  "repository": {
+    "url": "https://github.com/EdgePlat/edgepedia-mcp",
+    "source": "github"
+  },
+  "icons": [
+    {
+      "src": "https://www.edgechat.ai/assets/edgechat-chestnut-orange-logo-v2.png",
+      "mimeType": "image/png",
+      "sizes": ["1130x1130"]
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://www.edgechat.ai/mcp"
+    }
+  ]
+}
