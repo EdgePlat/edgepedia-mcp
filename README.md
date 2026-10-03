@@ -12,6 +12,8 @@ Listed in the [official MCP Registry](https://registry.modelcontextprotocol.io/v
 
 ## Connect
 
+[![Install in VS Code](https://img.shields.io/badge/VS_Code-Install_Edgepedia-0098FF?logo=visualstudiocode&logoColor=white)](https://vscode.dev/redirect/mcp/install?name=edgepedia&config=%7B%22type%22%3A%22http%22%2C%22url%22%3A%22https%3A%2F%2Fwww.edgechat.ai%2Fmcp%22%7D) [![Add to Cursor](https://cursor.com/deeplink/mcp-install-dark.svg)](https://cursor.com/install-mcp?name=edgepedia&config=eyJ1cmwiOiJodHRwczovL3d3dy5lZGdlY2hhdC5haS9tY3AifQ%3D%3D)
+
 **Claude Code**
 ```bash
 claude mcp add --transport http edgepedia https://www.edgechat.ai/mcp
