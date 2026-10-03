@@ -29,6 +29,11 @@ claude mcp add --transport http edgepedia https://www.edgechat.ai/mcp
 { "servers": { "edgepedia": { "type": "http", "url": "https://www.edgechat.ai/mcp" } } }
 ```
 
+**Gemini CLI**
+```bash
+gemini extensions install https://github.com/EdgePlat/edgepedia-mcp
+```
+
 **Any other client:** add `https://www.edgechat.ai/mcp` as a Streamable HTTP server.
 
 ## Tools

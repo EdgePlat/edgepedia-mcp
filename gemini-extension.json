@@ -1,0 +1,10 @@
+{
+  "name": "edgepedia",
+  "version": "1.0.2",
+  "description": "Search and read Edgepedia, a free and growing encyclopedia with citations. No key.",
+  "mcpServers": {
+    "edgepedia": {
+      "httpUrl": "https://www.edgechat.ai/mcp"
+    }
+  }
+}
