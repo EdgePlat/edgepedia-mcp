@@ -6,6 +6,8 @@ The official MCP server for [Edgepedia](https://www.edgechat.ai/edgepedia), a fr
 
 **Address:** `https://www.edgechat.ai/mcp` (Streamable HTTP). No key, no sign-up, read-only.
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23121636.svg)](https://doi.org/10.5281/zenodo.23121636)
+
 Listed in the [official MCP Registry](https://registry.modelcontextprotocol.io/v0/servers?search=ai.edgechat/edgepedia) as `ai.edgechat/edgepedia`.
 
 ## Connect
