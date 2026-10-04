@@ -10,6 +10,12 @@ The official MCP server for [Edgepedia](https://www.edgechat.ai/edgepedia), a fr
 
 Listed in the [official MCP Registry](https://registry.modelcontextprotocol.io/v0/servers?search=ai.edgechat/edgepedia) as `ai.edgechat/edgepedia`.
 
+## Corpus 1.5
+
+[Edgepedia 1.5, released October 4, 2026](https://www.edgechat.ai/edgepedia/updates), brings about 25,000 new or rewritten film and series articles, plus short summaries across the encyclopedia. Search previews return these published summaries, while full articles remain available as Markdown. On the website, detailed film and series plots sit in expandable Spoilers sections.
+
+Inspect [the API root](https://www.edgechat.ai/api/v1) for current `corpus_version`, `corpus_updated`, and `release_notes` metadata. The MCP initialization instructions include the same metadata. Corpus releases and MCP package versions are independent: corpus 1.5 does not mean MCP package version 1.5.
+
 ## Connect
 
 [![Install in VS Code](https://img.shields.io/badge/VS_Code-Install_Edgepedia-0098FF?logo=visualstudiocode&logoColor=white)](https://vscode.dev/redirect/mcp/install?name=edgepedia&config=%7B%22type%22%3A%22http%22%2C%22url%22%3A%22https%3A%2F%2Fwww.edgechat.ai%2Fmcp%22%7D) [![Add to Cursor](https://cursor.com/deeplink/mcp-install-dark.svg)](https://cursor.com/install-mcp?name=edgepedia&config=eyJ1cmwiOiJodHRwczovL3d3dy5lZGdlY2hhdC5haS9tY3AifQ%3D%3D)
@@ -44,7 +50,7 @@ gemini extensions install https://github.com/EdgePlat/edgepedia-mcp
 
 | Tool | Input | Returns |
 |---|---|---|
-| `search` | `query`: a subject's name, not a question | Matching articles: id, title, link, and the opening sentences. Other names and misspellings work ("Zhu Yuanzhang" finds the Hongwu Emperor). Words that name a topic ("science fiction writers") also return that topic. |
+| `search` | `query`: a subject's name, not a question | Matching articles: id, title, link, and the published summary, falling back to the article opening when no summary is available. Other names and misspellings work ("Zhu Yuanzhang" finds the Hongwu Emperor). Words that name a topic ("science fiction writers") also return that topic. |
 | `fetch` | `id`: an article's or topic's id; `citations` (optional) | One article as Markdown, with its link, date, topic, license, and credit line. `citations: false` swaps inline source links for `[n]` markers, about a quarter shorter. A topic's id lists its articles. |
 
 Both tools are annotated read-only. Try asking:
@@ -52,6 +58,20 @@ Both tools are annotated read-only. Try asking:
 - *When did Mount Fuji last erupt? Use Edgepedia.*
 - *Who was Zhu Yuanzhang? Use Edgepedia.*
 - *Give me the credit line for Edgepedia's Marie Curie article.*
+
+## Reference cards
+
+Use the [reference-card builder](https://www.edgechat.ai/developers#reference-cards) to find an article, choose automatic, light, or dark appearance, and copy its embed code. Each card shows the title, complete published summary, Edgepedia credit, and a link to the full article. The optional sizing script adjusts the iframe height; without it, the card remains readable and scrollable.
+
+The standalone [HTML example](examples/reference-card.html) embeds [Cantor's diagonal argument](https://www.edgechat.ai/embed/ep9kcz7eym?theme=auto), using canonical article ID `ep9kcz7eym`:
+
+```html
+<iframe data-edgepedia-card src="https://www.edgechat.ai/embed/ep9kcz7eym?theme=auto"
+  title="Edgepedia: Cantor&#39;s diagonal argument" loading="lazy" referrerpolicy="no-referrer"
+  sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"
+  style="width:100%;height:360px;border:0"></iframe>
+<script async src="https://www.edgechat.ai/assets/edgepedia-embed.js" referrerpolicy="no-referrer"></script>
+```
 
 ## No MCP client?
 
