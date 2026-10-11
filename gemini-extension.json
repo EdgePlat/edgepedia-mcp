@@ -1,6 +1,6 @@
 {
   "name": "edgepedia",
-  "version": "1.0.2",
+  "version": "1.2.0",
   "description": "Search and read Edgepedia, a free and growing encyclopedia with citations. No key.",
   "mcpServers": {
     "edgepedia": {

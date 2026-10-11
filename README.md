@@ -10,11 +10,11 @@ The official MCP server for [Edgepedia](https://www.edgechat.ai/edgepedia), a fr
 
 Listed in the [official MCP Registry](https://registry.modelcontextprotocol.io/v0/servers?search=ai.edgechat/edgepedia) as `ai.edgechat/edgepedia`.
 
-## Corpus 1.5
+## Corpus 1.6
 
-[Edgepedia 1.5, released October 4, 2026](https://www.edgechat.ai/edgepedia/updates), brings about 25,000 new or rewritten film and series articles, plus short summaries across the encyclopedia. Search previews return these published summaries, while full articles remain available as Markdown. On the website, detailed film and series plots sit in expandable Spoilers sections.
+[Edgepedia 1.6, released October 11, 2026](https://www.edgechat.ai/edgepedia/updates#2026-10-11), adds 14,827 articles on Nobel laureates and other leading thinkers, religion, and economics, and rewrites 10,118 more. Edgepedia now holds 381,770 articles.
 
-Inspect [the API root](https://www.edgechat.ai/api/v1) for current `corpus_version`, `corpus_updated`, and `release_notes` metadata. The MCP initialization instructions include the same metadata. Corpus releases and MCP package versions are independent: corpus 1.5 does not mean MCP package version 1.5.
+Inspect [the API root](https://www.edgechat.ai/api/v1) for current `corpus_version`, `corpus_updated`, and `release_notes` metadata. The MCP initialization instructions include the same metadata. Corpus releases and MCP package versions are independent: corpus 1.6 does not mean MCP package version 1.6.
 
 ## Connect
 
@@ -51,12 +51,16 @@ gemini extensions install https://github.com/EdgePlat/edgepedia-mcp
 | Tool | Input | Returns |
 |---|---|---|
 | `search` | `query`: a subject's name, not a question | Matching articles: id, title, link, and the published summary, falling back to the article opening when no summary is available. Other names and misspellings work ("Zhu Yuanzhang" finds the Hongwu Emperor). Words that name a topic ("science fiction writers") also return that topic. |
-| `fetch` | `id`: an article's or topic's id; `citations` (optional) | One article as Markdown, with its link, date, topic, license, and credit line. `citations: false` swaps inline source links for `[n]` markers, about a quarter shorter. A topic's id lists its articles. |
+| `fetch` | `id`: an article's or topic's id; `citations` (optional) | One article as Markdown, with its link, date, topic, license, and credit line. `citations: false` swaps inline source links for `[n]` markers, about a quarter shorter. A topic's id lists its articles. Optional: up to 10 ids at once, one section, a token budget, or only the passages that match your words. |
+| `related` | `id`: an article's id | Articles related to it: its topic-mates, a few from each neighboring topic, and its geography neighbors. |
+| `connect` | `from`, `to`: two article ids | The shortest chain of in-text links from one article to the other (at most 6 hops), with the sentence that makes each hop. |
+| `resolve` | `name`, and optionally `context`: words from the text around it | Which article a name means, with a confidence and the alternatives ("Jaguar" beside "British car maker" is Jaguar Land Rover; beside "big cat" it is the animal). |
 
-Both tools are annotated read-only. Try asking:
+All five tools are annotated read-only. Try asking:
 
 - *When did Mount Fuji last erupt? Use Edgepedia.*
 - *Who was Zhu Yuanzhang? Use Edgepedia.*
+- *How is Marie Curie connected to Mount Fuji? Use Edgepedia.*
 - *Give me the credit line for Edgepedia's Marie Curie article.*
 
 ## Reference cards
