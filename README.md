@@ -2,7 +2,7 @@
 
 # Edgepedia MCP server
 
-The official MCP server for [Edgepedia](https://www.edgechat.ai/edgepedia), a free encyclopedia by [EdgeChat](https://www.edgechat.ai): over 300k articles with citations, and constantly growing. It lets an AI assistant search Edgepedia and read whole articles.
+The official MCP server for [Edgepedia](https://www.edgechat.ai/edgepedia), a free encyclopedia by [EdgeChat](https://www.edgechat.ai): more than 400,000 articles with citations, and constantly growing. It lets an AI assistant search Edgepedia and read whole articles.
 
 **Address:** `https://www.edgechat.ai/mcp` (Streamable HTTP). No key, no sign-up, read-only.
 

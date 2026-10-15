@@ -5,7 +5,7 @@ description: Look up people, places, events, organizations, and concepts in Edge
 
 # Edgepedia
 
-Edgepedia is a free encyclopedia by EdgeChat: over 300k articles with citations. Its API needs no key.
+Edgepedia is a free encyclopedia by EdgeChat: more than 400,000 articles with citations. Its API needs no key.
 
 ## Search
 
