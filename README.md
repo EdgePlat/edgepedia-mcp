@@ -10,11 +10,13 @@ The official MCP server for [Edgepedia](https://www.edgechat.ai/edgepedia), a fr
 
 Listed in the [official MCP Registry](https://registry.modelcontextprotocol.io/v0/servers?search=ai.edgechat/edgepedia) as `ai.edgechat/edgepedia`.
 
-## Corpus 1.6
+## Corpus 1.7
 
-[Edgepedia 1.6, released October 11, 2026](https://www.edgechat.ai/edgepedia/updates#2026-10-11), adds 14,827 articles on Nobel laureates and other leading thinkers, religion, and economics, and rewrites 10,118 more. [Edgepedia 1.6.1](https://www.edgechat.ai/edgepedia/updates#1.6.1), the same day, adds 132,755 links from articles to the articles they mention, which `connect` follows. The current release is [Edgepedia 1.7.0](https://www.edgechat.ai/edgepedia/updates#1.7.0) (October 15, 2026), which adds 36,205 new articles on technology, energy, robotics, and the physical sciences, rewrites 39,264 more, and fixes errors across the corpus; Edgepedia now holds 417,975 articles.
+The current release is [Edgepedia 1.7.0](https://www.edgechat.ai/edgepedia/updates#1.7.0) (October 15, 2026), which adds 36,205 new articles on technology, energy, robotics, and the physical sciences, rewrites 39,264 more, and fixes errors across the corpus; Edgepedia now holds 417,975 articles.
 
-Inspect [the API root](https://www.edgechat.ai/api/v1) for current `corpus_version`, `corpus_updated`, and `release_notes` metadata. The MCP initialization instructions include the same metadata. Corpus releases and MCP package versions are independent: corpus 1.6 does not mean MCP package version 1.6.
+[Edgepedia 1.6, released October 11, 2026](https://www.edgechat.ai/edgepedia/updates#2026-10-11), adds 14,827 articles on Nobel laureates and other leading thinkers, religion, and economics, and rewrites 10,118 more. [Edgepedia 1.6.1](https://www.edgechat.ai/edgepedia/updates#1.6.1), the same day, adds 132,755 links from articles to the articles they mention, which `connect` follows.
+
+Inspect [the API root](https://www.edgechat.ai/api/v1) for current `corpus_version`, `corpus_updated`, and `release_notes` metadata. The MCP initialization instructions include the same metadata. Corpus releases and MCP package versions are independent: corpus 1.7 does not mean MCP package version 1.7.
 
 ## Connect
 
