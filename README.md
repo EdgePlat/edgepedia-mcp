@@ -14,9 +14,7 @@ Listed in the [official MCP Registry](https://registry.modelcontextprotocol.io/v
 
 The current release is [Edgepedia 1.8.0](https://www.edgechat.ai/edgepedia/updates#1.8.0) (October 21, 2026), which adds 68,240 new articles on life and health, places, and sports, rewrites 67,775 more, reorganizes the topic tree, and fixes errors across the corpus; Edgepedia now holds 486,198 articles.
 
-[Edgepedia 1.7.0](https://www.edgechat.ai/edgepedia/updates#1.7.0) (October 15, 2026) added 36,205 new articles on technology, energy, robotics, and the physical sciences and rewrote 39,264 more.
-
-[Edgepedia 1.6, released October 11, 2026](https://www.edgechat.ai/edgepedia/updates#2026-10-11), adds 14,827 articles on Nobel laureates and other leading thinkers, religion, and economics, and rewrites 10,118 more. [Edgepedia 1.6.1](https://www.edgechat.ai/edgepedia/updates#1.6.1), the same day, adds 132,755 links from articles to the articles they mention, which `connect` follows.
+Earlier releases: [Edgepedia updates](https://www.edgechat.ai/edgepedia/updates).
 
 Inspect [the API root](https://www.edgechat.ai/api/v1) for current `corpus_version`, `corpus_updated`, and `release_notes` metadata. The MCP initialization instructions include the same metadata. Corpus releases and MCP package versions are independent: corpus 1.8 does not mean MCP package version 1.8.
 
@@ -63,6 +61,7 @@ gemini extensions install https://github.com/EdgePlat/edgepedia-mcp
 All five tools are annotated read-only. Try asking:
 
 - *When did Mount Fuji last erupt? Use Edgepedia.*
+- *What is Mwindo Fossae on Pluto? Use Edgepedia.*
 - *Who was Zhu Yuanzhang? Use Edgepedia.*
 - *How is Marie Curie connected to Mount Fuji? Use Edgepedia.*
 - *Give me the credit line for Edgepedia's Marie Curie article.*
@@ -101,6 +100,6 @@ This repository's own files (documentation, configuration, and examples) are und
 
 - Read Edgepedia: [www.edgechat.ai/edgepedia](https://www.edgechat.ai/edgepedia)
 - What's new: [www.edgechat.ai/edgepedia/updates](https://www.edgechat.ai/edgepedia/updates)
-- Edgepedia on your Mac, offline, in EdgeChat: [www.edgechat.ai/download](https://www.edgechat.ai/download)
+- Edgepedia offline, in EdgeChat: [www.edgechat.ai/download](https://www.edgechat.ai/download)
 - Something broken? [Report it](https://www.edgechat.ai/bugreport), or open an issue here.
 - Privacy: [www.edgechat.ai/privacy](https://www.edgechat.ai/privacy)
