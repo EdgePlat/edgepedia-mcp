@@ -3,7 +3,7 @@
   "name": "ai.edgechat/edgepedia",
   "title": "Edgepedia",
   "description": "Search and read Edgepedia, a free and growing encyclopedia with citations. No key.",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "websiteUrl": "https://www.edgechat.ai/developers",
   "repository": {
     "url": "https://github.com/EdgePlat/edgepedia-mcp",
@@ -24,7 +24,7 @@
   ],
   "_meta": {
     "io.modelcontextprotocol.registry/publisher-provided": {
-      "ai.edgechat/tools-sha256": "0f8219968df72aff852f03bae4adf90f182e097d709f6a2c17c6b42768ecf14e"
+      "ai.edgechat/tools-sha256": "34944e39dde27b82b3f5e38d49a715791692f8150906e1629e7c2ddeb00ee5df"
     }
   }
 }

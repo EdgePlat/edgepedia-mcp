@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.2.1 (2026-10-31)
+- The server's instructions and its two search descriptions say "more than 500,000 articles" (Edgepedia 1.9.0 holds 519,064). Tools and behavior are unchanged; the registry entry, `server.json` (with its new tools digest), and the Gemini extension are at 1.2.1.
+
+## README — 2026-10-31
+- The README names Edgepedia 1.9.0 (October 31, 2026) as the current release and points to the updates page for earlier ones; the README and the skill say "more than 500,000 articles".
+
 ## README — 2026-10-21
 - The README names Edgepedia 1.8.0 (October 21, 2026) as the current release and points to the updates page for earlier ones. The server itself is unchanged.
 
