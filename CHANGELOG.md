@@ -1,5 +1,8 @@
 # Changelog
 
+## README — 2026-11-01
+- The README names Edgepedia 1.9.1 (November 1, 2026) as the current release: plots back behind the Spoilers section in 24,257 film and series articles. The server itself is unchanged.
+
 ## 1.2.1 (2026-10-31)
 - The server's instructions and its two search descriptions say "more than 500,000 articles" (Edgepedia 1.9.0 holds 519,064). Tools and behavior are unchanged; the registry entry, `server.json` (with its new tools digest), and the Gemini extension are at 1.2.1.
 

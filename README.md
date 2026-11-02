@@ -12,7 +12,7 @@ Listed in the [official MCP Registry](https://registry.modelcontextprotocol.io/v
 
 ## Corpus 1.9
 
-The current release is [Edgepedia 1.9.0](https://www.edgechat.ai/edgepedia/updates#1.9.0) (October 31, 2026), which adds 34,848 new articles on arts and culture, history and society, the physical sciences, and technology, and rewrites 150,691 more from fresh research; Edgepedia now holds 519,064 articles.
+The current release is [Edgepedia 1.9.1](https://www.edgechat.ai/edgepedia/updates#1.9.1) (November 1, 2026), which puts plots back behind the Spoilers section in 24,257 film and series articles. It follows [Edgepedia 1.9.0](https://www.edgechat.ai/edgepedia/updates#1.9.0) (October 31, 2026), which added 34,848 new articles on arts and culture, history and society, the physical sciences, and technology, and rewrote 150,691 more from fresh research; Edgepedia holds 519,064 articles.
 
 Earlier releases: [Edgepedia updates](https://www.edgechat.ai/edgepedia/updates).
 
