@@ -1,5 +1,8 @@
 # Changelog
 
+## README — 2026-11-11
+- The README names Edgepedia 1.9.2 (November 11, 2026) as the current release: references corrected, Simplified Chinese applied uniformly, and mention counts for search ranking. The server itself is unchanged.
+
 ## README — 2026-11-01
 - The README names Edgepedia 1.9.1 (November 1, 2026) as the current release: plots back behind the Spoilers section in 24,257 film and series articles. The server itself is unchanged.
 
