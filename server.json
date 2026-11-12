@@ -4,22 +4,22 @@
   "title": "Edgepedia",
   "description": "Search and read Edgepedia, a free and growing encyclopedia with citations. No key.",
   "version": "1.2.1",
-  "websiteUrl": "https://www.edgechat.ai/developers",
+  "websiteUrl": "https://www.edgepedia.org/developers",
   "repository": {
     "url": "https://github.com/EdgePlat/edgepedia-mcp",
     "source": "github"
   },
   "icons": [
     {
-      "src": "https://www.edgechat.ai/assets/edgechat-chestnut-orange-logo-v2.png",
+      "src": "https://www.edgepedia.org/assets/edgepedia-mark-512.png",
       "mimeType": "image/png",
-      "sizes": ["1130x1130"]
+      "sizes": ["512x512"]
     }
   ],
   "remotes": [
     {
       "type": "streamable-http",
-      "url": "https://www.edgechat.ai/mcp"
+      "url": "https://www.edgepedia.org/mcp"
     }
   ],
   "_meta": {

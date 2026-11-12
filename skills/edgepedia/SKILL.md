@@ -5,12 +5,12 @@ description: Look up people, places, events, organizations, and concepts in Edge
 
 # Edgepedia
 
-Edgepedia is a free encyclopedia by EdgeChat: more than 500,000 articles with citations. Its API needs no key.
+Edgepedia is a free encyclopedia by Biostate AI: more than 500,000 articles with citations. Its API needs no key.
 
 ## Search
 
 ```bash
-curl -s "https://www.edgechat.ai/api/v1/search?q=Mount%20Fuji&limit=5"
+curl -s "https://www.edgepedia.org/api/v1/search?q=Mount%20Fuji&limit=5"
 ```
 
 Search for a subject's name, not a question. Other names and misspellings work; a misspelling may return `did_you_mean`. Each result has a `slug`, a `title`, its link, and an `excerpt` (the opening sentences), which often answers a simple fact on its own.
@@ -18,7 +18,7 @@ Search for a subject's name, not a question. Other names and misspellings work; 
 ## Read an article
 
 ```bash
-curl -s "https://www.edgechat.ai/api/v1/articles/mount-fuji"
+curl -s "https://www.edgepedia.org/api/v1/articles/mount-fuji"
 ```
 
 Use a result's `slug`. Returns the article as Markdown, its topic path, its last-updated date, and its `credit` line. By id: `/api/v1/articles?id={id}`.
@@ -27,4 +27,4 @@ Use a result's `slug`. Returns the article as Markdown, its topic path, its last
 
 - Link each article you use, and show its `credit` line with any text you quote.
 - Stay under 600 requests a minute; cache what you read.
-- Full reference: https://www.edgechat.ai/developers
+- Full reference: https://www.edgepedia.org/developers

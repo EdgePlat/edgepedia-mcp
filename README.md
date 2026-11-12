@@ -2,9 +2,9 @@
 
 # Edgepedia MCP server
 
-The official MCP server for [Edgepedia](https://www.edgechat.ai/edgepedia), a free encyclopedia by [EdgeChat](https://www.edgechat.ai): more than 500,000 articles with citations, and constantly growing. It lets an AI assistant search Edgepedia and read whole articles.
+The official MCP server for [Edgepedia](https://www.edgepedia.org), a free encyclopedia by [Biostate AI](https://www.biostate.ai/): more than 500,000 articles with citations, and constantly growing. It lets an AI assistant search Edgepedia and read whole articles.
 
-**Address:** `https://www.edgechat.ai/mcp` (Streamable HTTP). No key, no sign-up, read-only.
+**Address:** `https://www.edgepedia.org/mcp` (Streamable HTTP). No key, no sign-up, read-only.
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23121636.svg)](https://doi.org/10.5281/zenodo.23121636)
 
@@ -12,33 +12,33 @@ Listed in the [official MCP Registry](https://registry.modelcontextprotocol.io/v
 
 ## Corpus 1.9
 
-The current release is [Edgepedia 1.9.2](https://www.edgechat.ai/edgepedia/updates#1.9.2) (November 11, 2026), which corrects references, uniformly applies Simplified Chinese, and counts how often each article is mentioned, so search ranks better. It follows [Edgepedia 1.9.1](https://www.edgechat.ai/edgepedia/updates#1.9.1) (November 1, 2026), which put plots back behind the Spoilers section in 24,257 film and series articles; Edgepedia holds 519,064 articles.
+The current release is [Edgepedia 1.9.2](https://www.edgepedia.org/edgepedia/updates#1.9.2) (November 11, 2026), which corrects references, uniformly applies Simplified Chinese, and counts how often each article is mentioned, so search ranks better. It follows [Edgepedia 1.9.1](https://www.edgepedia.org/edgepedia/updates#1.9.1) (November 1, 2026), which put plots back behind the Spoilers section in 24,257 film and series articles; Edgepedia holds 519,064 articles.
 
-Earlier releases: [Edgepedia updates](https://www.edgechat.ai/edgepedia/updates).
+Earlier releases: [Edgepedia updates](https://www.edgepedia.org/edgepedia/updates).
 
-Inspect [the API root](https://www.edgechat.ai/api/v1) for current `corpus_version`, `corpus_updated`, and `release_notes` metadata. The MCP initialization instructions include the same metadata. Corpus releases and MCP package versions are independent: corpus 1.9 does not mean MCP package version 1.9.
+Inspect [the API root](https://www.edgepedia.org/api/v1) for current `corpus_version`, `corpus_updated`, and `release_notes` metadata. The MCP initialization instructions include the same metadata. Corpus releases and MCP package versions are independent: corpus 1.9 does not mean MCP package version 1.9.
 
 ## Connect
 
-[![Install in VS Code](https://img.shields.io/badge/VS_Code-Install_Edgepedia-0098FF?logo=visualstudiocode&logoColor=white)](https://vscode.dev/redirect/mcp/install?name=edgepedia&config=%7B%22type%22%3A%22http%22%2C%22url%22%3A%22https%3A%2F%2Fwww.edgechat.ai%2Fmcp%22%7D) [![Add to Cursor](https://cursor.com/deeplink/mcp-install-dark.svg)](https://cursor.com/install-mcp?name=edgepedia&config=eyJ1cmwiOiJodHRwczovL3d3dy5lZGdlY2hhdC5haS9tY3AifQ%3D%3D)
+[![Install in VS Code](https://img.shields.io/badge/VS_Code-Install_Edgepedia-0098FF?logo=visualstudiocode&logoColor=white)](https://vscode.dev/redirect/mcp/install?name=edgepedia&config=%7B%22type%22%3A%22http%22%2C%22url%22%3A%22https%3A%2F%2Fwww.edgepedia.org%2Fmcp%22%7D) [![Add to Cursor](https://cursor.com/deeplink/mcp-install-dark.svg)](https://cursor.com/install-mcp?name=edgepedia&config=eyJ1cmwiOiJodHRwczovL3d3dy5lZGdlcGVkaWEub3JnL21jcCJ9)
 
 **Claude Code**
 ```bash
-claude mcp add --transport http edgepedia https://www.edgechat.ai/mcp
+claude mcp add --transport http edgepedia https://www.edgepedia.org/mcp
 ```
 
-**Claude (web and desktop):** Settings → Connectors → Add custom connector → `https://www.edgechat.ai/mcp`
+**Claude (web and desktop):** Settings → Connectors → Add custom connector → `https://www.edgepedia.org/mcp`
 
-**ChatGPT** (paid plans): turn on Developer mode (Settings → Security and login), then Plugins → + → New Plugin → Server URL `https://www.edgechat.ai/mcp`, Authentication: No Auth. In a chat, type `@Edgepedia`.
+**ChatGPT** (paid plans): turn on Developer mode (Settings → Security and login), then Plugins → + → New Plugin → Server URL `https://www.edgepedia.org/mcp`, Authentication: No Auth. In a chat, type `@Edgepedia`.
 
 **Cursor** (`~/.cursor/mcp.json`)
 ```json
-{ "mcpServers": { "edgepedia": { "url": "https://www.edgechat.ai/mcp" } } }
+{ "mcpServers": { "edgepedia": { "url": "https://www.edgepedia.org/mcp" } } }
 ```
 
 **VS Code** (`.vscode/mcp.json`)
 ```json
-{ "servers": { "edgepedia": { "type": "http", "url": "https://www.edgechat.ai/mcp" } } }
+{ "servers": { "edgepedia": { "type": "http", "url": "https://www.edgepedia.org/mcp" } } }
 ```
 
 **Gemini CLI**
@@ -46,7 +46,7 @@ claude mcp add --transport http edgepedia https://www.edgechat.ai/mcp
 gemini extensions install https://github.com/EdgePlat/edgepedia-mcp
 ```
 
-**Any other client:** add `https://www.edgechat.ai/mcp` as a Streamable HTTP server.
+**Any other client:** add `https://www.edgepedia.org/mcp` as a Streamable HTTP server.
 
 ## Tools
 
@@ -68,21 +68,21 @@ All five tools are annotated read-only. Try asking:
 
 ## Reference cards
 
-Use the [reference-card builder](https://www.edgechat.ai/developers#reference-cards) to find an article, choose automatic, light, or dark appearance, and copy its embed code. Each card shows the title, complete published summary, Edgepedia credit, and a link to the full article. The optional sizing script adjusts the iframe height; without it, the card remains readable and scrollable.
+Use the [reference-card builder](https://www.edgepedia.org/developers#reference-cards) to find an article, choose automatic, light, or dark appearance, and copy its embed code. Each card shows the title, complete published summary, Edgepedia credit, and a link to the full article. The optional sizing script adjusts the iframe height; without it, the card remains readable and scrollable.
 
-The standalone [HTML example](examples/reference-card.html) embeds [Cantor's diagonal argument](https://www.edgechat.ai/embed/ep9kcz7eym?theme=auto), using canonical article ID `ep9kcz7eym`:
+The standalone [HTML example](examples/reference-card.html) embeds [Cantor's diagonal argument](https://www.edgepedia.org/embed/ep9kcz7eym?theme=auto), using canonical article ID `ep9kcz7eym`:
 
 ```html
-<iframe data-edgepedia-card src="https://www.edgechat.ai/embed/ep9kcz7eym?theme=auto"
+<iframe data-edgepedia-card src="https://www.edgepedia.org/embed/ep9kcz7eym?theme=auto"
   title="Edgepedia: Cantor&#39;s diagonal argument" loading="lazy" referrerpolicy="no-referrer"
   sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"
   style="width:100%;height:360px;border:0"></iframe>
-<script async src="https://www.edgechat.ai/assets/edgepedia-embed.js" referrerpolicy="no-referrer"></script>
+<script async src="https://www.edgepedia.org/assets/edgepedia-embed.js" referrerpolicy="no-referrer"></script>
 ```
 
 ## No MCP client?
 
-- **Plain JSON API**, same reads: [www.edgechat.ai/developers](https://www.edgechat.ai/developers) ([OpenAPI](https://www.edgechat.ai/openapi.json)). Every article is also Markdown at its own address: [www.edgechat.ai/koala.md](https://www.edgechat.ai/koala.md).
+- **Plain JSON API**, same reads: [www.edgepedia.org/developers](https://www.edgepedia.org/developers) ([OpenAPI](https://www.edgepedia.org/openapi.json)). Every article is also Markdown at its own address: [www.edgechat.ai/koala.md](https://www.edgechat.ai/koala.md).
 - **Agent Skill:** [`skills/edgepedia/SKILL.md`](skills/edgepedia/SKILL.md) teaches an agent to use that API.
 - **Examples** in [`examples/`](examples): `curl`, Python, and JavaScript, with no dependencies.
 
@@ -92,14 +92,14 @@ The standalone [HTML example](examples/reference-card.html) embeds [Cantor's dia
 
 ## License
 
-Articles are under the [Edgepedia Community License 1.0](https://www.edgechat.ai/edgepedia/license): free with credit, commercial use included, and AI training is open to everyone. For other uses, organizations over USD 100 million in revenue or 100 million monthly users license separately. Show each article's `credit` line, with its link, wherever you show its text.
+Articles are under the [Edgepedia Community License 1.0](https://www.edgepedia.org/edgepedia/license): free with credit, commercial use included, and AI training is open to everyone. For other uses, organizations over USD 100 million in revenue or 100 million monthly users license separately. Show each article's `credit` line, with its link, wherever you show its text.
 
 This repository's own files (documentation, configuration, and examples) are under the [MIT License](LICENSE).
 
 ## Links
 
-- Read Edgepedia: [www.edgechat.ai/edgepedia](https://www.edgechat.ai/edgepedia)
-- What's new: [www.edgechat.ai/edgepedia/updates](https://www.edgechat.ai/edgepedia/updates)
+- Read Edgepedia: [www.edgepedia.org](https://www.edgepedia.org)
+- What's new: [www.edgepedia.org/edgepedia/updates](https://www.edgepedia.org/edgepedia/updates)
 - Edgepedia offline, in EdgeChat: [www.edgechat.ai/download](https://www.edgechat.ai/download)
 - Something broken? [Report it](https://www.edgechat.ai/bugreport), or open an issue here.
-- Privacy: [www.edgechat.ai/privacy](https://www.edgechat.ai/privacy)
+- Privacy: [www.edgepedia.org/edgepedia/privacy](https://www.edgepedia.org/edgepedia/privacy)

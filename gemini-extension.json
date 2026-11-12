@@ -4,7 +4,7 @@
   "description": "Search and read Edgepedia, a free and growing encyclopedia with citations. No key.",
   "mcpServers": {
     "edgepedia": {
-      "httpUrl": "https://www.edgechat.ai/mcp"
+      "httpUrl": "https://www.edgepedia.org/mcp"
     }
   }
 }

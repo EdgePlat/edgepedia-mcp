@@ -2,7 +2,7 @@
 
 Edgepedia's MCP server is hosted. Nothing installs or runs locally, and it needs no key or account.
 
-- Address: `https://www.edgechat.ai/mcp`
+- Address: `https://www.edgepedia.org/mcp`
 - Transport: Streamable HTTP
 
 ## Cline
@@ -14,7 +14,7 @@ Add this to `cline_mcp_settings.json`:
   "mcpServers": {
     "edgepedia": {
       "type": "streamableHttp",
-      "url": "https://www.edgechat.ai/mcp",
+      "url": "https://www.edgepedia.org/mcp",
       "disabled": false
     }
   }

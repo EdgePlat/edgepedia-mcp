@@ -1,6 +1,6 @@
 #!/bin/sh
 # Call the Edgepedia MCP server with curl: list the tools, search, then fetch.
-URL=https://www.edgechat.ai/mcp
+URL=https://www.edgepedia.org/mcp
 
 call() {
   curl -s "$URL" \

@@ -3,7 +3,7 @@ import json
 import sys
 import urllib.request
 
-URL = "https://www.edgechat.ai/mcp"
+URL = "https://www.edgepedia.org/mcp"
 
 
 def call(tool, arguments):

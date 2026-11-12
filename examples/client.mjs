@@ -1,5 +1,5 @@
 // Search Edgepedia and read an article through its MCP server. Node 18+, no dependencies.
-const URL = 'https://www.edgechat.ai/mcp';
+const URL = 'https://www.edgepedia.org/mcp';
 
 async function call(tool, args) {
   const response = await fetch(URL, {
