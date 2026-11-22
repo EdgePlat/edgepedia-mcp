@@ -82,7 +82,7 @@ The standalone [HTML example](examples/reference-card.html) embeds [Cantor's dia
 
 ## No MCP client?
 
-- **Plain JSON API**, same reads: [www.edgepedia.org/developers](https://www.edgepedia.org/developers) ([OpenAPI](https://www.edgepedia.org/openapi.json)). Every article is also Markdown at its own address: [www.edgechat.ai/koala.md](https://www.edgechat.ai/koala.md).
+- **Plain JSON API**, same reads: [www.edgepedia.org/developers](https://www.edgepedia.org/developers) ([OpenAPI](https://www.edgepedia.org/openapi.json)). Every article is also Markdown at its own address: [www.edgepedia.org/koala.md](https://www.edgepedia.org/koala.md).
 - **Agent Skill:** [`skills/edgepedia/SKILL.md`](skills/edgepedia/SKILL.md) teaches an agent to use that API.
 - **Examples** in [`examples/`](examples): `curl`, Python, and JavaScript, with no dependencies.
 
