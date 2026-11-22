@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.2.2 (2026-11-22)
+- The server's address is `https://www.edgepedia.org/mcp`, and the registry entry now names it (the earlier address, `https://www.edgechat.ai/mcp`, answers a redirect to it). Tools and behavior are unchanged; the registry entry, `server.json` (with the current tools digest), and the Gemini extension are at 1.2.2.
+
 ## README — 2026-11-11
 - The README names Edgepedia 1.9.2 (November 11, 2026) as the current release: references corrected, Simplified Chinese applied uniformly, and mention counts for search ranking. The server itself is unchanged.
 
