@@ -1,0 +1,29 @@
+{
+  "$schema": "https://antigravity.google/schemas/v1/plugin.json",
+  "name": "edgepedia",
+  "displayName": "Edgepedia",
+  "version": "1.2.2",
+  "description": "Search and read Edgepedia, a free encyclopedia by Biostate AI with citations across 519,000+ articles in 31 languages. No API key.",
+  "logo": "assets/logo.svg",
+  "suggestedPrompts": [
+    "Look up Mount Fuji on Edgepedia and cite its last eruption",
+    "How is Marie Curie connected to Mount Fuji on Edgepedia?",
+    "Search Edgepedia for quantum mechanics and read the article in Simplified Chinese"
+  ],
+  "author": {
+    "name": "Biostate AI",
+    "url": "https://www.biostate.ai"
+  },
+  "homepage": "https://www.edgepedia.org/developers",
+  "repository": "https://github.com/EdgePlat/edgepedia-mcp",
+  "license": "MIT",
+  "keywords": [
+    "encyclopedia",
+    "reference",
+    "knowledge",
+    "citations",
+    "research",
+    "multilingual",
+    "mcp"
+  ]
+}

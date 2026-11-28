@@ -1,18 +1,20 @@
-<p align="center"><img src="icon.png" width="96" alt="Edgepedia"></p>
+<p align="center"><img src="assets/logo.svg" width="96" alt="Edgepedia"></p>
 
 # Edgepedia MCP server
 
-The official MCP server for [Edgepedia](https://www.edgepedia.org), a free encyclopedia by [Biostate AI](https://www.biostate.ai/): more than 500,000 articles with citations, and constantly growing. It lets an AI assistant search Edgepedia and read whole articles.
+The official MCP server for [Edgepedia](https://www.edgepedia.org), a free encyclopedia by [Biostate AI](https://www.biostate.ai/): more than 519,000 articles with citations across 31 languages, and constantly growing. It lets an AI assistant search Edgepedia and read whole articles.
 
 **Address:** `https://www.edgepedia.org/mcp` (Streamable HTTP). No key, no sign-up, read-only.
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23121636.svg)](https://doi.org/10.5281/zenodo.23121636)
 
-Listed in the [official MCP Registry](https://registry.modelcontextprotocol.io/v0/servers?search=ai.edgechat/edgepedia) as `ai.edgechat/edgepedia`.
+Listed in the [official MCP Registry](https://registry.modelcontextprotocol.io/v0/servers?search=ai.edgechat/edgepedia) as `ai.edgechat/edgepedia` and in the [Gemini CLI Extension Gallery](https://geminicli.com/extensions).
 
-## Corpus 1.9
+## Edgepedia 2.0
 
-The current release is [Edgepedia 1.9.2](https://www.edgepedia.org/edgepedia/updates#1.9.2) (November 11, 2026), which corrects references, uniformly applies Simplified Chinese, and counts how often each article is mentioned, so search ranks better. It follows [Edgepedia 1.9.1](https://www.edgepedia.org/edgepedia/updates#1.9.1) (November 1, 2026), which put plots back behind the Spoilers section in 24,257 film and series articles; Edgepedia holds 519,064 articles.
+[Edgepedia 2.0](https://www.edgepedia.org/edgepedia/updates) (November 23, 2026) adds translation across 31 languages, with more than 243,000 articles already translated into Arabic, Spanish, Hindi, Chinese, and 26 additional languages. Pass `lang` on the `fetch` tool (or `?lang=` on `/api/v1/articles/{slug}`) to retrieve a stored translation when available.
+
+The underlying English corpus is [Edgepedia 1.9.2](https://www.edgepedia.org/edgepedia/updates#1.9.2) (November 11, 2026), holding 519,064 articles with corrected references, uniform Simplified Chinese, and mention counts for better search ranking.
 
 Earlier releases: [Edgepedia updates](https://www.edgepedia.org/edgepedia/updates).
 
@@ -41,7 +43,16 @@ claude mcp add --transport http edgepedia https://www.edgepedia.org/mcp
 { "servers": { "edgepedia": { "type": "http", "url": "https://www.edgepedia.org/mcp" } } }
 ```
 
-**Gemini CLI**
+**Google Antigravity** (App, CLI, or IDE extensions)
+```bash
+agy plugin install https://github.com/EdgePlat/edgepedia-mcp
+```
+Or add to `~/.gemini/config/mcp_config.json` (or `<workspace>/.agents/mcp_config.json`):
+```json
+{ "mcpServers": { "edgepedia": { "url": "https://www.edgepedia.org/mcp" } } }
+```
+
+**Gemini CLI** (listed in the [Gemini CLI Extension Gallery](https://geminicli.com/extensions))
 ```bash
 gemini extensions install https://github.com/EdgePlat/edgepedia-mcp
 ```
@@ -53,7 +64,7 @@ gemini extensions install https://github.com/EdgePlat/edgepedia-mcp
 | Tool | Input | Returns |
 |---|---|---|
 | `search` | `query`: a subject's name, not a question | Matching articles: id, title, link, and the published summary, falling back to the article opening when no summary is available. Other names and misspellings work ("Zhu Yuanzhang" finds the Hongwu Emperor). Words that name a topic ("science fiction writers") also return that topic. |
-| `fetch` | `id`: an article's or topic's id; `citations` (optional) | One article as Markdown, with its link, date, topic, license, and credit line. `citations: false` swaps inline source links for `[n]` markers, about a quarter shorter. A topic's id lists its articles. Optional: up to 10 ids at once, one section, a token budget, or only the passages that match your words. |
+| `fetch` | `id`: an article's or topic's id; `lang` (optional); `citations` (optional) | One article as Markdown, with its link, date, topic, license, and credit line. Pass `lang` for a stored translation in any of 31 languages (falls back to English if not yet translated). `citations: false` swaps inline source links for `[n]` markers, about a quarter shorter. A topic's id lists its articles. Optional (English): up to 10 ids at once, one section, a token budget, or only the passages that match your words. |
 | `related` | `id`: an article's id | Articles related to it: its topic-mates, a few from each neighboring topic, and its geography neighbors. |
 | `connect` | `from`, `to`: two article ids | The shortest chain of in-text links from one article to the other (at most 6 hops), with the sentence that makes each hop. |
 | `resolve` | `name`, and optionally `context`: words from the text around it | Which article a name means, with a confidence and the alternatives ("Jaguar" beside "British car maker" is Jaguar Land Rover; beside "big cat" it is the animal). |

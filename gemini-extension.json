@@ -1,7 +1,7 @@
 {
   "name": "edgepedia",
   "version": "1.2.2",
-  "description": "Search and read Edgepedia, a free and growing encyclopedia with citations. No key.",
+  "description": "Search and read Edgepedia, a free encyclopedia by Biostate AI with citations across 519,000+ articles in 31 languages. No key.",
   "mcpServers": {
     "edgepedia": {
       "httpUrl": "https://www.edgepedia.org/mcp"

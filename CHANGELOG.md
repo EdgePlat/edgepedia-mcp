@@ -1,5 +1,9 @@
 # Changelog
 
+## Antigravity plugin & Edgepedia 2.0 docs — 2026-11-28
+- Added native Google Antigravity plugin bundle (`plugin.json`, `mcp_config.json`, and `assets/logo.svg` using the official Edgepedia mark) for `agy plugin install https://github.com/EdgePlat/edgepedia-mcp` and Antigravity Marketplace readiness.
+- Updated `README.md`, `skills/edgepedia/SKILL.md`, and `gemini-extension.json` for Edgepedia 2.0 (31 languages, 243,000+ translated articles, and `lang` parameter support on `fetch` and `/api/v1/articles/{slug}`).
+
 ## 1.2.2 (2026-11-22)
 - The server's address is `https://www.edgepedia.org/mcp`, and the registry entry now names it (the earlier address, `https://www.edgechat.ai/mcp`, answers a redirect to it). Tools and behavior are unchanged; the registry entry, `server.json` (with the current tools digest), and the Gemini extension are at 1.2.2.
 
