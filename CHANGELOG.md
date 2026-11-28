@@ -1,5 +1,8 @@
 # Changelog
 
+## Google ADK example — 2026-11-28
+- Added [`examples/google_adk.py`](examples/google_adk.py) and a Google ADK `McpToolset` (`StreamableHTTPConnectionParams`) quick-start snippet in `README.md`, verified live against `https://www.edgepedia.org/mcp`.
+
 ## Antigravity plugin & Edgepedia 2.0 docs — 2026-11-28
 - Added native Google Antigravity plugin bundle (`plugin.json`, `mcp_config.json`, and `assets/logo.svg` using the official Edgepedia mark) for `agy plugin install https://github.com/EdgePlat/edgepedia-mcp` and Antigravity Marketplace readiness.
 - Updated `README.md`, `skills/edgepedia/SKILL.md`, and `gemini-extension.json` for Edgepedia 2.0 (31 languages, 243,000+ translated articles, and `lang` parameter support on `fetch` and `/api/v1/articles/{slug}`).

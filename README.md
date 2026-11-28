@@ -57,6 +57,24 @@ Or add to `~/.gemini/config/mcp_config.json` (or `<workspace>/.agents/mcp_config
 gemini extensions install https://github.com/EdgePlat/edgepedia-mcp
 ```
 
+**Google ADK** (Python, see [`examples/google_adk.py`](examples/google_adk.py))
+```python
+from google.adk.agents import LlmAgent
+from google.adk.tools.mcp_tool import McpToolset, StreamableHTTPConnectionParams
+
+agent = LlmAgent(
+    model="gemini-3.7-flash",
+    name="edgepedia_assistant",
+    tools=[
+        McpToolset(
+            connection_params=StreamableHTTPConnectionParams(
+                url="https://www.edgepedia.org/mcp"
+            )
+        )
+    ],
+)
+```
+
 **Any other client:** add `https://www.edgepedia.org/mcp` as a Streamable HTTP server.
 
 ## Tools
@@ -95,7 +113,7 @@ The standalone [HTML example](examples/reference-card.html) embeds [Cantor's dia
 
 - **Plain JSON API**, same reads: [www.edgepedia.org/developers](https://www.edgepedia.org/developers) ([OpenAPI](https://www.edgepedia.org/openapi.json)). Every article is also Markdown at its own address: [www.edgepedia.org/koala.md](https://www.edgepedia.org/koala.md).
 - **Agent Skill:** [`skills/edgepedia/SKILL.md`](skills/edgepedia/SKILL.md) teaches an agent to use that API.
-- **Examples** in [`examples/`](examples): `curl`, Python, and JavaScript, with no dependencies.
+- **Examples** in [`examples/`](examples): `curl`, Python, JavaScript, and Google ADK (`McpToolset`).
 
 ## Limits
 
